@@ -10,19 +10,7 @@ static void heapify(int a[], int n, int i)
     // If left child is larger than root  
     if (left < n && a[left] > a[largest])  
         largest = left;  
-    // If right child is larger than root  
-    if (right < n && a[right] > a[largest])  
-        largest = right;  
-    // If root is not largest  
-    if (largest != i) {  
-        // swap a[i] with a[largest]  
-        int temp = a[i];  
-        a[i] = a[largest];  
-        a[largest] = temp;  
-          
-        heapify(a, n, largest);  
-    }  
-}  
+
 /*Function to implement the heap sort*/  
 static void heapSort(int a[], int n)  
 {  
