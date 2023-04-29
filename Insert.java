@@ -2,8 +2,7 @@ public class Insert
 {  
     void insert(int a[]) /* function to sort an array with insertion sort */  
 {  
-    int i, j, temp;  
-    int n = a.length;  
+  
     for (i = 1; i < n; i++)
 	{  
         temp = a[i];  
