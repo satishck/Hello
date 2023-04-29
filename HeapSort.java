@@ -41,11 +41,7 @@ static void heapSort(int a[], int n)
     }  
 }  
 /* function to print the array elements */  
-static void printArr(int a[], int n)  
-{  
-    for (int i = 0; i < n; ++i)  
-        System.out.print(a[i] + " ");  
-}  
+
 public static void main(String args[])   
 {  
     int a[] = {45, 7, 20, 40, 25, 23, -2};  
