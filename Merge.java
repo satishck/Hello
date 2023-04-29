@@ -43,12 +43,7 @@ void merge(int a[], int beg, int mid, int end)
         k++;    
     }    
       
-    while (j<n2)    
-    {    
-        a[k] = RightArray[j];    
-        j++;    
-        k++;    
-    }    
+    
 }    
   
 void mergeSort(int a[], int beg, int end)  
