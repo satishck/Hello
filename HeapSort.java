@@ -23,6 +23,24 @@ static void heapify(int a[], int n, int i)
         heapify(a, n, largest);  
     }  
 }  
+/*Function to implement the heap sort*/  
+static void heapSort(int a[], int n)  
+{  
+    for (int i = n / 2 - 1; i >= 0; i--)  
+        heapify(a, n, i);  
+  
+    // One by one extract an element from heap  
+    for (int i = n - 1; i >= 0; i--) {  
+        /* Move current root element to end*/  
+        // swap a[0] with a[i]  
+        int temp = a[0];  
+        a[0] = a[i];  
+        a[i] = temp;  
+          
+        heapify(a, i, 0);  
+    }  
+}  
+/* function to print the array elements */  
 
 public static void main(String args[])   
 {  
