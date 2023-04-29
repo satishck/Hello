@@ -28,7 +28,8 @@ static void heapSort(int a[], int n)
         heapify(a, i, 0);  
     }  
 }  
-/* function to print the array elements */  
+
+ 
 
 public static void main(String args[])   
 {  
